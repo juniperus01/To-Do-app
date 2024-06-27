@@ -1,14 +1,13 @@
 from flask import Flask, jsonify
-from flask_jwt_extended import JWTManager
 from pymongo import MongoClient
+from auth import jwt
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'fca5b60df8d349cb9f5828b9531cadd0'
-jwt = JWTManager(app)
+app.config['SECRET_KEY'] = 'your_secret_key_here'
 
-# Connect to MongoDB
+# Initialize MongoClient and Database
 client = MongoClient('mongodb://localhost:27017/')
-db = client.myDatabase
+db = client.ToDo_database
 
 
 # Home route
