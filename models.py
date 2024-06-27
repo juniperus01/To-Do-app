@@ -24,6 +24,9 @@ class User:
         )
     
     def check_password(self, password):
+        print(password)
+        print(self.password)
+        print(check_password_hash(self.password, password))
         return check_password_hash(self.password, password)
 
 
