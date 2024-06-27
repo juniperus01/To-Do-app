@@ -1,4 +1,4 @@
-# Flask ToDo App with JWT Authentication
+# Flask To-Do App with JWT Authentication
 
 This is a Flask-based To-Do application that demonstrates basic CRUD operations with JWT (JSON Web Token) authentication.
 
